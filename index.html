@@ -6,10 +6,9 @@
   </title>
   <style type="text/css">
     body {
-      height: 125vh;
-      margin-top: 80px;
-      padding: 30px;
-      background-size: cover;
+      margin: 0;
+      padding: 0;
+      background-color: black;
       font-family: sans-serif;
     }
     header {
@@ -17,7 +16,7 @@
       position: fixed;
       left: 0;
       right: 0;
-      top: 5px;
+      top: 0;
       height: 30px;
       display: flex;
       align-items: center;
@@ -33,10 +32,37 @@
       color: white;
       text-decoration: none;
     }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+    .container div {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        position: static;
+        box-shadow: none;
+      }
+      
+      header li {
+        margin: 10px;
+      }
+      
+      .container div {
+        max-width: 300px;
+      }
+    }
   </style>
 </head>
-<body style="background-color: black;">
-  <nav>
+<body>
+  <header>
     <ul>
       <li>
         <a href="index.html">Home</a>
@@ -48,9 +74,9 @@
         <a href="connect.html">Connect</a>
       </li>
     </ul>
-  </nav>
+  </header>
 
-  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+  <div class="container">
     <div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScjV7NDlwFRG1w3Y94W33fuH5NW7Ob8Yw_Mcctq_M8zaqb33g/viewform?usp=sf_link">Запросити допомогу</a>
       <br>
