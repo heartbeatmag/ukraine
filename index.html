@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>
-  
-  </title>
+  <title></title>
   <style type="text/css">
     body {
       margin: 0;
       padding: 0;
-      background-color: black;
       font-family: sans-serif;
     }
     header {
@@ -32,56 +29,41 @@
       color: white;
       text-decoration: none;
     }
-    
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    nav {
+      padding-top: 30px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
       text-align: center;
     }
-    
-    .container div {
-      max-width: 400px;
+    ul li {
+      display: inline-block;
+      margin: 10px;
     }
-
-    @media screen and (max-width: 768px) {
-      header {
-        position: static;
-        box-shadow: none;
-      }
-      
-      header li {
-        margin: 10px;
-      }
-      
-      .container div {
-        max-width: 300px;
-      }
+    ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .content {
+      text-align: center;
+      padding: 50px;
     }
   </style>
 </head>
 <body>
   <header>
     <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="mag.html">Mag</a>
-      </li>
-      <li>
-        <a href="connect.html">Connect</a>
-      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mag.html">Mag</a></li>
+      <li><a href="connect.html">Connect</a></li>
     </ul>
   </header>
 
-  <div class="container">
-    <div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScjV7NDlwFRG1w3Y94W33fuH5NW7Ob8Yw_Mcctq_M8zaqb33g/viewform?usp=sf_link">Запросити допомогу</a>
-      <br>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQcMV4ageZmlyv1xk8fiEKVKz7z98bAZIxMH3NxRws2ezRzA/viewform?usp=sf_link">Записатись як волонтер / Sign up as volunteer</a>
-    </div>
+  <div class="content">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjV7NDlwFRG1w3Y94W33fuH5NW7Ob8Yw_Mcctq_M8zaqb33g/viewform?usp=sf_link">Запросити допомогу</a>
+    <br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQcMV4ageZmlyv1xk8fiEKVKz7z98bAZIxMH3NxRws2ezRzA/viewform?usp=sf_link">Записатись як волонтер / Sign up as a volunteer</a>
   </div>
 </body>
 </html>
